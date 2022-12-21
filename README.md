@@ -33,6 +33,7 @@ TMDB-API
 ✔️ Css responsivo
 
 # Surge
+ Cole no navegador para testar
  numerous-maid.surge.sh
 
 # Para clonar
