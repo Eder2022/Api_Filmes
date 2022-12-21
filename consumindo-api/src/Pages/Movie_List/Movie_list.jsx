@@ -15,19 +15,7 @@ export const Movie_list = ()=>{
     const [filtered, setFiltered] = useState([]); 
     const [activeGenre, setActiveGenre] = useState(0);
 
-    // useEffect(()=>{
-
-    //         fetch(`https://api.themoviedb.org/3/movie/popular?api_key=3c4a1db4ccddd8d83abeb6aa669038be&language=pt-BR&page=1`)
-    //         .then(response => response.json())
-    //         .then(data => setMoveis(data.results))
-
-            
-        
-        
-        
-        
-    //     },[])
-
+    
         useEffect(() => {
             fetchPopular();
           }, []);
@@ -61,19 +49,7 @@ export const Movie_list = ()=>{
       </Popular>
       </Container_div>
 
-            {/* <Container_div>
-                {moveis.map((listaFilmes)=>{
-                    return (
-                        
-                        <ul key={listaFilmes.id}
-                         onClick={()=>onClik_Detail(listaFilmes.id)}>
-                            <img src={`${Image_Path}${listaFilmes.poster_path}`}/>
-                             <h3>{listaFilmes.title}</h3>
-                        </ul>
-                       
-                    )
-                })}
-            </Container_div> */}
+          
        
         </>
     )
