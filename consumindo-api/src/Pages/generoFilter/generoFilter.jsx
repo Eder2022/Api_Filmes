@@ -1,76 +1,7 @@
-// import { useEffect } from "react";
-// import { useState } from "react";
-// import { useParams } from "react-router-dom";
 
-import { Container02, Genre_Button_Styled } from "./Genre_Button_styled";
-
-
-
-// export const GenresFilter = ()=>{
-
-//    const {id} = useParams()
-    
-   
-//    const [genres, setgenres ] = useState([]);
-//    const [filters, setFilters] = useState([]);
-//    const [movie, setMovie] = useState([]);
-
-//    const handleFilterGenres =(event)=>{
-//       console.log(event.target.value)
-
-      
-         
-//    }
-
-//        useEffect(()=>{
-
-//       fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=${Api_Key}&language=pt-BR`)
-//       .then(response => response.json())
-//       .then(data => {
-
-       
-
-//          console.log(data.genres)
-//          setgenres(data.genres)
-         
-         
-         
-//       })
-     
-  
-//       },[])
-
-
-//    return (
-//       <>
-//       <Container02>
-
-     
-//       <div className="header">
-//          <h1>Milhões de filmes, séries e pessoas para descobrir. Explore já.</h1>
-//          <p>Categorias:</p>
-      
-//       {genres.map((genre)=>{
-//          return (
-//          <Genre_Button_Styled 
-//          key={genre.id}
-//          type="button"
-        
-//          onClick={()=>handleFilterGenres(genres.id)}
-        
-//          >{genre.name}
-         
-//          </Genre_Button_Styled>
-//          )
-        
-//       })} </div>
-//       </Container02>
-//       </>
-//    )
-// }
-           
-
+import { Container02, Genre_Button_Styled } from "./Genre_Button_styled";         
 import React, { useEffect } from "react";
+
 export const Filter = ({ popular, setFiltered, activeGenre, setActiveGenre }) => {
   useEffect(() => {
     if (activeGenre === 0) {
